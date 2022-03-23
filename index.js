@@ -10,8 +10,8 @@ app.use(express.json());
 
 // const Mongo_URL = "mongodb://localhost:27017";
 
-const PORT=process.env.PORT;
 
+const PORT=process.env.PORT;
 const Mongo_URL = process.env.Mongo_URL;
 
 
