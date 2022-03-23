@@ -10,6 +10,8 @@ app.use(express.json());
 
 // const Mongo_URL = "mongodb://localhost:27017";
 
+const PORT=process.env.PORT;
+
 const Mongo_URL = process.env.Mongo_URL;
 
 
@@ -72,4 +74,4 @@ app.put("/user/:id", async function (req, res) {
     res.send(result);
 })
 
-app.listen(4000, () => console.log("server started in port no 4000"));
+app.listen(PORT, () => console.log("server started in port no 4000"));
